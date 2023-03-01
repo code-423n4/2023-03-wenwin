@@ -1,0 +1,29 @@
+{
+  "name": "wenwin",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "solhint": "^3.3.7"
+  },
+  "scripts": {
+    "echidna-assertion": "echidna-test . --contract LotteryEchidna --config echidna.assertion.config.yaml",
+    "echidna-property": "echidna-test . --contract LotteryEchidnaProperty --config echidna.property.config.yaml",
+    "lint": "yarn lint:sol && yarn prettier:check",
+    "lint:sol": "forge fmt --check && yarn solhint \"{script,src,test}/**/*.sol\"",
+    "lint:sol:write": "forge fmt && yarn solhint --fix \"{script,src,test}/**/*.sol\"",
+    "postinstall": "husky install && chmod +x .husky/*",
+    "prettier:check": "prettier --check \"**/*.{json,md,yml}\"",
+    "prettier:write": "prettier --write \"**/*.{json,md,yml}\""
+  },
+  "lint-staged": {
+    "*.sol": [
+      "yarn lint:sol:write"
+    ],
+    "*.{json,md,yml}": [
+      "yarn prettier:write"
+    ]
+  }
+}
