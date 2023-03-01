@@ -2,8 +2,6 @@
 // slither-disable-next-line solc-version
 pragma solidity 0.8.19;
 
-import "forge-std/Test.sol";
-
 /// @dev Helper library used for ticket utilities
 /// Ticket is represented as uint120 packed ticket:
 /// If `x`th bit of ticket is set, it means ticket contains number x + 1
