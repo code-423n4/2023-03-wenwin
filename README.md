@@ -52,4 +52,8 @@ To run the tests you need to:
 2. Clone the repo using `git clone --recurse-submodules`.
 3. Run `forge test`
 
+To generate coverage run `bash script/sh/generateCoverageReport.sh`. It will open HTML report in your default browser.
+
+To get gas report run `forge test --gas-report`
+
 More documentation on testing and lottery mechanics can be found in [Wenwin contracts readme](https://github.com/wenwincom/wenwin-contracts/blob/main/README.md).
