@@ -1,6 +1,6 @@
 # Wenwin contest details
 
-- Total Prize Pool: Sum of below awards
+- Total Prize Pool: $36,500 USDC
   - HM awards: $25,500 USDC
   - QA report awards: $3,000 USDC
   - Gas report awards: $1,500 USDC
