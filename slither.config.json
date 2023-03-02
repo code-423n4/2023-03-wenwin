@@ -1,0 +1,4 @@
+{
+  "filter_paths": "lib|test|script|src/echidna",
+  "solc_remaps": ["ds-test/=lib/ds-test/src/", "forge-std/=lib/forge-std/src/"]
+}
