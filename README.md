@@ -60,21 +60,21 @@ All the contracts under the `test` and `script` directories.
 
 ## Scoping Details 
 ```
-- If you have a public code repo, please share it here:  Repo is private
-- How many contracts are in scope?:   6
-- Total SLoC for these contracts?:  1000
-- How many external imports are there?: 2 
-- How many separate interfaces and struct definitions are there for the contracts within scope?:  6
-- Does most of your code generally use composition or inheritance?:   There is a little bit of inheritance
-- How many external calls?:   1
+- If you have a public code repo, please share it here:  https://github.com/wenwincom/wenwin-contracts
+- How many contracts are in scope?:   13
+- Total SLoC for these contracts?:  962
+- How many external imports are there?: Open Zeppelin, ChainLink
+- How many separate interfaces and struct definitions are there for the contracts within scope?:  11
+- Does most of your code generally use composition or inheritance?: We use inheritance for Lottery contract to divide responsibility of the contract.
+- How many external calls?: 3
 - What is the overall line coverage percentage provided by your tests?:  100
 - Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?: false  
 - Please describe required context:   n/a
-- Does it use an oracle?:  true
+- Does it use an oracle?:  true (ChainLink VRFv2 randomness oracle)
 - Does the token conform to the ERC20 standard?:  yes
 - Are there any novel or unique curve logic or mathematical models?: None
-- Does it use a timelock function?:  No
-- Is it an NFT?: Yes
+- Does it use a timelock function?:  Yes (Native token staking implements time lock)
+- Is it an NFT?: Yes (Lottery Ticket is an NFT)
 - Does it have an AMM?:   No
 - Is it a fork of a popular project?:   false
 - Does it use rollups?:   false
