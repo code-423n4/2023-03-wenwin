@@ -58,6 +58,30 @@ For more detailed information about the protocol, please refer to the [Wenwin Lo
 
 All the contracts under the `test` and `script` directories.
 
+## Scoping Details 
+```
+- If you have a public code repo, please share it here:  Repo is private
+- How many contracts are in scope?:   6
+- Total SLoC for these contracts?:  1000
+- How many external imports are there?: 2 
+- How many separate interfaces and struct definitions are there for the contracts within scope?:  6
+- Does most of your code generally use composition or inheritance?:   There is a little bit of inheritance
+- How many external calls?:   1
+- What is the overall line coverage percentage provided by your tests?:  100
+- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?: false  
+- Please describe required context:   n/a
+- Does it use an oracle?:  true
+- Does the token conform to the ERC20 standard?:  yes
+- Are there any novel or unique curve logic or mathematical models?: None
+- Does it use a timelock function?:  No
+- Is it an NFT?: Yes
+- Does it have an AMM?:   No
+- Is it a fork of a popular project?:   false
+- Does it use rollups?:   false
+- Is it multi-chain?:  false
+- Does it use a side-chain?: false 
+```
+
 # Tests
 
 More documentation on testing and lottery mechanics can be found in [Wenwin contracts README](https://github.com/wenwincom/wenwin-contracts/blob/main/README.md).
