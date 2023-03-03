@@ -26,10 +26,10 @@ Wenwin is a decentralized gaming protocol that provides developers with the abil
 
 The protocol's main contracts are:
 
-- [Lottery](src/Lottery.sol): The main entry point for all lottery actions, including buying tickets, claiming rewards, and executing draws. Issues [Ticket](src/Ticket.sol) ERC-721 NFTs to players. It inherits from [RNSourceController](src/RNSourceController.sol) that controls random number sources and prevents the lottery's owner from changing the source without it failing to deliver a random number for a while.
-- [LotteryToken](src/LotteryToken.sol): The native token of Wenwin Lottery. It can be staked (stakers receive a portion of ticket sales) and referral rewards.
-- [VRFv2RNSource](src/VRFv2RNSource.sol): The Chainlink VRFv2 random number source integration used for generating a winning ticket combination for a draw.
-- [Staking](src/staking/Staking.sol): A contract implementing native token staking that receives rewards from ticket sales and distributes them to stakers.
+- [Lottery](https://github.com/code-423n4/2023-03-wenwin/blob/main/src/Lottery.sol): The main entry point for all lottery actions, including buying tickets, claiming rewards, and executing draws. Issues [Ticket](https://github.com/code-423n4/2023-03-wenwin/blob/main/src/Ticket.sol) ERC-721 NFTs to players. It inherits from [RNSourceController](https://github.com/code-423n4/2023-03-wenwin/blob/main/src/RNSourceController.sol) that controls random number sources and prevents the lottery's owner from changing the source without it failing to deliver a random number for a while.
+- [LotteryToken](https://github.com/code-423n4/2023-03-wenwin/blob/main/src/LotteryToken.sol): The native token of Wenwin Lottery. It can be staked (stakers receive a portion of ticket sales) and referral rewards.
+- [VRFv2RNSource](https://github.com/code-423n4/2023-03-wenwin/blob/main/src/VRFv2RNSource.sol): The Chainlink VRFv2 random number source integration used for generating a winning ticket combination for a draw.
+- [Staking](https://github.com/code-423n4/2023-03-wenwin/blob/main/src/staking/Staking.sol): A contract implementing native token staking that receives rewards from ticket sales and distributes them to stakers.
 
 For more detailed information about the protocol, please refer to the [Wenwin Lottery documentation](https://docs.wenwin.com/wenwin-lottery).
 
