@@ -1,0 +1,2033 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q1-2023 / wenwin-mar06
+==============================================================
+
+[03/03/2023 12:03] kartoonjoy (pinned)
+👋 Hello and welcome to the contest channel for the $36,500 USDC **Wenwin** contest!
+
+📆 Contest opens 03/06/2023 20:00 (20:00 UTC) and runs through 03/09/2023 20:00 (20:00 UTC) (3 days).
+
+Please give a warm welcome to the Wenwin team, particularly @rando, @Lucky Dev, and @TutaRicky, who will be available for questions either here in the channel or via DM.
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+Contest Page: https://code4rena.com/contests/2023-03-wenwin-contest
+
+{Embed}
+https://code4rena.com/contests/2023-03-wenwin-contest
+Code4rena Wenwin contest
+$36,500 USDC
+6 March 2023—9 March 2023
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/c4-og-banner-0FCFA.png
+
+{Reactions}
+🚀 (14) 😼 (2) 
+
+[03/03/2023 12:03] kartoonjoy
+Pinned a message.
+
+
+[03/03/2023 12:07] kartoonjoy
+Hi All 👋! Let's please limit conversation until the contest begins. Thanks!
+
+
+[03/06/2023 20:12] zhuxket
+There was an error during git clone
+
+
+[03/06/2023 20:13] pfapostol
+I had no errors
+
+
+[03/06/2023 20:14] zhuxket
+I used --recursive switch, and it was from chainlink
+
+
+[03/06/2023 20:16] zhuxket
+It's successful on the second try, strange. Thanks @pfapostol
+
+
+[03/06/2023 20:28] 0xpathfindr
+Known issues link missing
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/Screenshot_2023-03-06_at_20.27.20-22D9F.png
+
+
+[03/06/2023 20:28] 0xpathfindr
+I suppose this willl be updated soon
+
+{Reactions}
+👍 (4) 
+
+[03/06/2023 20:28] carlitox477
+the 1.5 DAI per ticket is a fixed number or just an example for the documentation?
+
+
+[03/06/2023 20:29] kartoonjoy
+the known issues link should be posted here within an hour of contest open and then will also be posted within the repo.
+
+{Reactions}
+👍 
+
+[03/06/2023 20:37] 0xpathfindr
+A user can have as many tickets for the lottery as they want correct?
+
+
+[03/06/2023 20:37] 0xpathfindr
+Just like a traditional lottery ?
+
+
+[03/06/2023 20:46] thepicodes
+**Automated Findings:** https://gist.github.com/Picodes/70e749bf5bbebbd5cc745ba7bc3826b4
+
+{Reactions}
+👍 (3) 
+
+[03/06/2023 20:47] kartoonjoy (pinned)
+Wardens, please note that the automated findings output is posted below. These are considered publicly known issues and are not eligible for awards.
+
+**Automated findings: **
+https://gist.github.com/Picodes/70e749bf5bbebbd5cc745ba7bc3826b4
+
+{Embed}
+https://gist.github.com/Picodes/70e749bf5bbebbd5cc745ba7bc3826b4
+4naly3er-2023-03-wenwin.md
+GitHub Gist: instantly share code, notes, and snippets.
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/gist-og-image-17482.png
+
+{Reactions}
+👍 (3) 
+
+[03/06/2023 21:08] 0xpathfindr
+What is the difference between the LotteryEchidna contract and Lottery.sol contract
+
+
+[03/06/2023 21:10] rando#9476
+Hi everyone
+I am Rando, Chief Randomizer Officer at Wenwin. I will be here to answer all questions regarding smart contracts. Along with me there are @TutaRicky and @Lucky Dev
+
+{Reactions}
+👍 (6) 
+
+[03/06/2023 21:11] rando#9476
+LotteryEchidna is just a helper contract for Echidna fuzzer
+
+{Reactions}
+👍 (2) 
+
+[03/06/2023 21:11] rando#9476
+yes
+
+
+[03/06/2023 21:22] rando#9476
+it is an example. Ticket price is immutable after contract deployment. In the first lottery, 7 of 35 ticket price will be 1.5 DAI
+
+
+[03/06/2023 21:25] 0xpathfindr
+The winning number is always a 7 Digit number correct?
+
+
+[03/06/2023 21:28] rando#9476
+yes
+reconstructTicket makes sure it is like that. We also do a fuzzing on this method to return valid ticket.
+
+
+[03/06/2023 21:31] 0xpathfindr
+Cool, sent you a dm
+
+
+[03/06/2023 21:31] zouvier
+Which area of the code are you most worried about?
+
+
+[03/06/2023 21:35] 0xpathfindr
+Not sure if this question is directed at me but, Nothing in particular, just looking around for now
+
+
+[03/06/2023 21:35] zouvier
+Sorry should have been more clear. It was geared towards @rando
+
+
+[03/07/2023 02:05] P-384#4745
+I'm trying to find the integration docs for the frontend operators, is someone able to point me to them?
+
+
+[03/07/2023 04:47] 0xrobocop
+@rando what is CummulativeNetProfit?, is the total pot size at any time? Or is the pot size - initialPotSize?
+
+
+[03/07/2023 06:06] y1cunhui
+The automation findings link is still not updated
+
+{Reactions}
+thankyou 
+
+[03/07/2023 06:24] liveactionllamac4
+Thanks for flagging this - it has been added to the contest repo in github. But might take a little bit to push out to the contest page on the website.
+
+{Reactions}
+😆 
+
+[03/07/2023 06:35] y1cunhui
+where does this "1.5" come from? I thought it should be the BonusMultiplier, but the multiplier is 1 in this example
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/2023-03-07_14.34.35-D4B9B.png
+
+
+[03/07/2023 06:38] y1cunhui
+Sorry, so the "Tickets Sold = 1,000,000" means the number of tickets instead of the money.
+
+
+[03/07/2023 06:39] y1cunhui
+I misunderstand that
+
+
+[03/07/2023 06:43] seyni#0562
+1.5 is the cost per ticket. 1.5 is for 1.5 DAI
+
+
+[03/07/2023 07:29] TutaRicky#4738
+There is no specific area in code that we are worried about(the "hardest" part in code is reward calculations, so maybe that would be an area where you could look if we missed something)
+
+
+[03/07/2023 07:35] igingu
+Hi Ricky, I added you as a friend for DMs, if you could please accept.
+
+
+[03/07/2023 07:35] igingu
+Hi Rando, I added you as a friend for DMs, if you could please accept.
+
+
+[03/07/2023 07:38] TutaRicky#4738
+Frontend operators will directly connect to our SDK (or if they want, they could connect directly to smart contracts), but there is no specific integration from the backend side. The only `integration` is that in the function `buyTickets`, as parameter `frontend` will send the address of the frontend operator.
+
+
+[03/07/2023 07:39] TutaRicky#4738
+Accepted
+
+
+[03/07/2023 07:52] TutaRicky#4738
+As @seyni answered, 1.5 is ticket cost (1.5 DAI), and in this scenario (example), we projected 1 million tickets sold (so that is 1.5 million DAI).
+
+
+[03/07/2023 08:32] 0xpathfindr
+@rando Added you as well, kindly accept.
+
+
+[03/07/2023 08:41] rebirthisnear
+hi guys
+
+
+[03/07/2023 08:43] rebirthisnear
+where is this function or variable located?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/image-E819C.png
+
+
+[03/07/2023 08:51] 0xluckydev#5064
+You can find it in `LotterySetup.sol`
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/image-32BCE.png
+
+{Reactions}
+✅ 
+
+[03/07/2023 08:51] igingu
+The project heavily relies on public state variables, which by specifying override, actually override the functions in the interface. It is not a very common practice I think and confusing at first, but ends up with a lot less code and is pretty neat
+
+
+[03/07/2023 08:55] rebirthisnear
+thank you
+
+
+[03/07/2023 08:57] igingu
+What would be an usual value for the `maxRequestDelay` variable?
+
+
+[03/07/2023 08:57] dingo2077
+Hi, few questions:
+1) In our base scenario(for example in docs) selectionMax = 35? selectionSize = 7?
+2) How they packed into uint120? Like 7284920? What if I want choose 12 and 13 and 1. It will packed 12131? If so, how will you know that this is not 1,21,31 ?
+
+{Reactions}
+🚨 (2) 
+
+[03/07/2023 08:58] rebirthisnear
+Another question, when setting the cost of the ticket, what is the cost set?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/image-AEA0D.png
+
+
+[03/07/2023 08:59] igingu
+The cost would be 1.5 DAI, as per the documentation (1.5 * (10 ^ number of decimals of DAI))
+
+{Reactions}
+❤️ 
+
+[03/07/2023 09:06] 0xpathfindr
+@TutaRicky Added you and sent a dm
+
+
+[03/07/2023 09:10] 0xluckydev#5064
+1. Yes, but the code is not limited only to that lottery variant
+2. 1st, 12th and 13th rightmost bits are set to 1. So `ticket = (1 << 0) | (1 << 11) | (1 << 12)`
+
+{Reactions}
+💖 (2) 
+
+[03/07/2023 09:14] descharre
+What's the difference between drawIds and tickets in the buyTickets function?
+
+
+[03/07/2023 09:15] dingo2077
+tickets are choosed numbers. drawIds is the wednesday Id xD
+
+{Reactions}
+☝️ (2) 
+
+[03/07/2023 09:17] 0xpathfindr
+```   if (drawIds.length != tickets.length) { 
+            revert DrawsAndTicketsLenMismatch(drawIds.length, tickets.length);
+        }``` 
+
+
+Why does the drawIds.length  have to match  tickets.length?
+
+
+[03/07/2023 09:18] 0xpathfindr
+I'm guessing 1 draw == 1 ticket
+
+
+[03/07/2023 09:19] 0xpathfindr
+So I draw can be = [123456]  which is [1 ]ticket
+
+
+[03/07/2023 09:24] bole2653
+If you look at the code the following snippet you provided, this is required because it creates ticket NFT for the respective element in drawID and ticket arrays retrieved by common index, therefore they must match
+
+{Reactions}
+👍 
+
+[03/07/2023 09:24] 0xluckydev#5064
+Yes
+
+
+[03/07/2023 09:25] 0xluckydev#5064
+ith ticket will be bought for ith draw
+
+
+[03/07/2023 09:40] rando#9476
+1) yes
+2) I will try to answer with binary representation that you asked. "...1100000000001" would represent selecting 1, 12, and 13, without selecting any of the numbers between. So if number X is selected,  (X-1)th rightmost bit is set to 1. Since we limit lottery to 120 selection maximum you need only uint120 as it has 120 bits.
+in the case od 7/35, we basically use only 35 rightmost bits. Hope this explains
+
+{Reactions}
+👍 (9) 
+
+[03/07/2023 10:28] alexxander
+Hey @rando, could you accept my dm please
+
+
+[03/07/2023 11:18] 0xsurena
+that means can I buy 50 tickets?
+
+
+[03/07/2023 11:19] 0xluckydev#5064
+Yes, send 50 draws and 50 tickets and you can buy them together in one call
+
+{Reactions}
+👍 (2) 
+
+[03/07/2023 11:27] igingu
+Are there any guidelines to how the reports should be written? Do they use a specific language for links, highlighting, etc.?
+
+
+[03/07/2023 11:30] igingu
+Why are percentages represented as ONE_PERCENT = 1000, and PERCENTAGE_BASE = 100_000? Why not 1 and 100?
+
+
+[03/07/2023 11:38] 0xluckydev#5064
+That's the way we like to write it, no particular reason behind it
+
+
+[03/07/2023 11:38] TutaRicky#4738
+https://code4rena.com/contests/2023-03-wenwin-contest/submit , and for some additional details, the best would be to ask @kartoonjoy
+
+{Embed}
+https://code4rena.com/contests/2023-03-wenwin-contest/submit
+Submit finding | Code4rena
+The future of audits is decentralized.
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/c4-og-banner-0FCFA.png
+
+
+[03/07/2023 11:39] 0xluckydev#5064
+Just code style
+
+
+[03/07/2023 11:39] igingu
+I see, so it makes no mathematical difference opposed to using 1 and 100? I thought it doesn't as well, just wanted to make sure I was not missing anything
+
+
+[03/07/2023 11:40] kenzoagada
+Have a look at https://code4rena.com/reports . All the issues come from submissions, and this is generally the professional style one should strive for. You can see in every report it even links to the GitHub issue of each warden
+
+
+[03/07/2023 11:40] 0xluckydev#5064
+No, it's the same calculation
+
+{Reactions}
+✅ 
+
+[03/07/2023 11:41] Rvi#5470
+what is the connection between `Staking.sol` and `StakedTokenLocked.sol`?
+
+
+[03/07/2023 11:42] igingu
+Thank you! So the structure should be: name, code links, description, PoC, impact, and Recommended Mitigation Steps? Also, what do wardens write the reports in? (is it markdown), and do the code blocks need to look colorful in the reports?
+
+
+[03/07/2023 11:45] chrisapostolov
+Where can I read more about the safety margin implemented?
+
+
+[03/07/2023 11:46] 0xluckydev#5064
+`StakedTokenLocked.sol` is used for the team's staked tokens and `Staking.sol` is the staked token itself
+
+
+[03/07/2023 11:46] 0xluckydev#5064
+So `StakedTokenLocked` uses `Staking`
+
+
+[03/07/2023 11:47] Rvi#5470
+so teams token only gets locked?
+
+
+[03/07/2023 11:47] kenzoagada
+Yes, if you check out the submission like Ricky linked to, you'll see there's already a guiding template.
+The reports are in GitHub markdown as they will show up on GH eventually.
+I think you can wrap your code in 3 times "`" and then "solidity" and end it with 3 times that quote I used earlier.
+
+Such questions are better in a general channel like #🐺wardens , this channel is more for things directly related to this codebase
+
+{Reactions}
+thankyou 
+
+[03/07/2023 11:48] 0xluckydev#5064
+It is a constant used in bonus calculation: https://docs.wenwin.com/wenwin-lottery/the-game/prizes/bonuses
+
+{Embed}
+https://docs.wenwin.com/wenwin-lottery/the-game/prizes/bonuses
+Bonuses
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/Kn1rDfORlJcFdYXG3TmO-983A2.png
+
+{Reactions}
+thankyou 
+
+[03/07/2023 11:48] igingu
+I see, that makes sense, thanks!  Will move to #🐺wardens , didn't mean to pollute the chat
+
+{Reactions}
+🥂 
+
+[03/07/2023 11:50] 0xluckydev#5064
+Yes, you can check the docs: https://docs.wenwin.com/wenwin-lottery/protocol-architecture/token
+
+{Embed}
+https://docs.wenwin.com/wenwin-lottery/protocol-architecture/token
+Token
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/PqsPkO1MSAJYr40hpqNa-5929F.png
+
+{Reactions}
+✅ 
+
+[03/07/2023 13:20] chaindev
+I've found 3 major gas optimizable parts
+But submitted all of them in one report
+Does it value only one issue?
+
+{Reactions}
+👍 
+
+[03/07/2023 13:46] 0xjuancito
+Gas reports should be submitted in a single report
+
+Ref: https://docs.code4rena.com/awarding/judging-criteria#gas-reports
+
+{Embed}
+https://docs.code4rena.com/awarding/judging-criteria
+Judging criteria
+
+{Reactions}
+👍 (2) 
+
+[03/07/2023 15:21] beirao
+Is a testnet frontend available?
+
+
+[03/07/2023 15:22] 0xluckydev#5064
+Not yet, still WIP
+
+{Reactions}
+👍🏼 (2) 
+
+[03/07/2023 16:27] zouvier
+hey, @Lucky Dev I dm'd you :smile_google:
+
+
+[03/07/2023 17:10] igingu
+Why is minInitialPot set to 4 tokens?
+
+
+[03/07/2023 17:17] dingo2077
+To clarify prev topic about buyTicket().
+If I want to choose 1,13,12,7. - which uint120 should I pass to func? Help anyone plz). If 7 out of 35 condition.
+btw another question. IF 7 out of 35, seems I coud use less (like 3 numbers), right?
+
+
+[03/07/2023 17:22] madalad
+1,13,12,7 means you choose uint120(0x1100001000001) if I understood correctly
+
+
+[03/07/2023 17:23] 0xdaef0f
+That is a good question. How `uint120` map to a sequence of numbers.
+
+
+[03/07/2023 17:27] dingo2077
+are you sure? you use hex + binary )
+
+
+[03/07/2023 17:28] dingo2077
+Just for info: in provided tests. `SELECTION_SIZE` = 4;  `SELECTION_MAX `= 10;
+User pick (buyTicket) = uint120(0x0F). wat? obv it is not 15, bcz out fo range
+
+
+[03/07/2023 17:39] dingo2077
+what if 13 already has `1` bit rightmosted?
+
+
+[03/07/2023 17:40] 0xluckydev#5064
+This is right representation of those for numbers if it is binary (0b1100001000001), not hex. So, if you have a 7/35 lottery and numbers 1, 2, 3, 4, 5, 6, 7, binary representation would be 0...01111111 (0x7F in hex)
+
+{Reactions}
+👍 (2) 
+
+[03/07/2023 17:43] 0xluckydev#5064
+Here's one python code you can run to check the binary representation:
+```python
+numbers = [1, 5, 14, 15, 20, 22, 35]
+ticket = 0
+for i in numbers:
+    ticket |= 1 << (i - 1)  # same as ticket += 2 ** (i - 1)
+
+print(bin(ticket)) # binary representation
+print(hex(ticket)) # hex representation
+```
+
+{Reactions}
+👍 (5) 
+
+[03/07/2023 17:44] dingo2077
+but how to convert decimals to _neccessary_ bin? Can you plz provide step by step at above example? For instance:
+1) I got first number `11`
+2) convert in to bin: `1011`
+3) because this is even number I make bitwise shift for 1 bit and got 0111 and finally convert to hex
+
+
+[03/07/2023 17:45] dingo2077
+ty bro
+
+
+[03/07/2023 17:46] dingo2077
+or, you bro @Madalad can help?
+
+
+[03/07/2023 17:48] madalad
+ill dm
+
+{Reactions}
+👍 
+
+[03/07/2023 18:14] 0xpathfindr
+Is there a maximum number of tickets that can be bought for a particular lottery >
+
+
+[03/07/2023 18:16] igingu
+You can think of it like this: let's say you run 7 / 35, and you picked 1 3 5 10 11 15 29. The representation of your ticket, in the smart contract is JUST ONE NUMBER, NOT 7. That number will be 2 ^ 1 + 2 ^ 3 + 2 ^ 5 + 2 ^ 10 + 2 ^ 11 + 2 ^ 15 + 2 ^ 29 (which is, a number where bits 1 3 5 10 11 15 29 are set to 1)
+
+This way, picking 1 3 5 or 5 3 1 ends up with the same ticket: 000.....0000101010.
+
+I think the gap in your understanding is that you are trying to convert picked number X into binary, and do something with it. How it actually works is that picking number X makes the representation of your ticket(in binary) have a 1 on position X, instead of a 0
+
+Now, if I have a ticket representation in binary, the way to convert it back to my 7 numbers is to see what are the indices of the bits set to 1. Let's call them X1, X2, ..., X7. The rest of the bits should be 0. This ticket would then mean that I picked numbers X1, X2, ..., X7
+
+{Reactions}
+🔥 (9) ✅ hi5 
+
+[03/07/2023 18:38] 0xluckydev#5064
+This is almost correct, except that correct formula is 2 ^ (X1 - 1) + 2 ^ (X2 - 1) + 2 ^ (X3 - 1) + 2 ^ (X4 - 1) + 2 ^ (X5 - 1) + 2 ^ (X6 - 1) + 2 ^ (X7 - 1) if you pick numbers X1, ..., X7 (each number is >= 1 and <= 35 for 7/35 lottery)
+
+
+[03/07/2023 18:40] 0xluckydev#5064
+I'm highly suggesting to check official implementation of a function that checks if a ticket is valid: https://github.com/code-423n4/2023-03-wenwin/blob/main/src/TicketUtils.sol#L17-L34
+
+
+[03/07/2023 18:41] sovaslava9
+why it start from 1? https://github.com/wenwincom/wenwin-contracts/blob/1fe7ffb8ada5f2c0dea1d6089470b342286aa3fd/src/Lottery.sol#L211
+
+{Embed}
+https://github.com/wenwincom/wenwin-contracts/blob/1fe7ffb8ada5f2c0dea1d6089470b342286aa3fd/src/Lottery.sol
+wenwin-contracts/Lottery.sol at 1fe7ffb8ada5f2c0dea1d6089470b342286...
+Smart contracts for Wenwin: decentralized and trustless games on the blockchain - wenwin-contracts/Lottery.sol at 1fe7ffb8ada5f2c0dea1d6089470b342286aa3fd · wenwincom/wenwin-contracts
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/wenwin-contracts-89F90
+
+
+[03/07/2023 18:42] 0xluckydev#5064
+win tier = number of matched numbers. It starts from 1 because we care about at least 1 match
+
+{Reactions}
+👍 
+
+[03/07/2023 18:42] sovaslava9
+but prizes starts from 3 matches..
+
+
+[03/07/2023 18:42] 0xluckydev#5064
+If it starts from 0, we would check basically all tickets, which is not needed
+
+
+[03/07/2023 18:43] 0xluckydev#5064
+In 7/35 example yes. But this is generalized approach and someone can deploy a version that would have prizes starting from 1 match
+
+
+[03/07/2023 18:44] 0xluckydev#5064
+The idea is not to look at this project as 7/35 only, but any possible combination. Selection size can be up to 16, selection max up to 120 and you can have min win tier 1
+
+
+[03/07/2023 18:45] 0xluckydev#5064
+You can see in the code that we didn't hardcode any of those parameters as they're set during deployment and can have any valid value
+
+
+[03/07/2023 19:08] igingu
+@Lucky Dev any thoughts on this?
+
+
+[03/07/2023 19:36] 0xluckydev#5064
+Just some number under we won't run lottery. I don't think 4 holds any specific meaning, but maybe @rando has different thoughts
+
+
+[03/07/2023 20:19] Rvi#5470
+Dm pls
+
+
+[03/07/2023 20:26] descharre
+Why is this? I thought other projects would just use the same contract with the 7/35 example on their frontend.
+
+
+[03/07/2023 20:32] 0xluckydev#5064
+We didn't want to limit ourselves by sticking to 7/35 only. Even if we hardcoded 7/35, the constants would be `SELECTION_SIZE = 7` and `SELECTION_MAX = 35` which are effectively same as immutable variables we have now. We use 7/35 (with min winnable tier of 3) as an example, but the contract should work for any other valid lottery.
+
+To sum up one use case, if we want to run multiple instances with different parameters, we can do it just by changing `.env` file without ever touching the contact code. All instances will have the same code, but different initial parameters. Hope that answers your question
+
+{Reactions}
+✅ (2) 
+
+[03/07/2023 20:50] igingu
+Thank you, I dmed you as well
+
+
+[03/07/2023 21:14] beirao
+@Lucky Dev this is the first audit of these contracts ?
+
+
+[03/07/2023 21:15] 0xluckydev#5064
+Yes
+
+{Reactions}
+👍🏼 (3) 
+
+[03/07/2023 21:37] descharre
+Is Lottery  the owner of LotteryToken?
+
+
+[03/07/2023 21:40] 0xluckydev#5064
+Yes
+
+
+[03/07/2023 22:10] glcanvas
+hello!
+what's the purpose of StakedTokenLock? Why someone might want to lock their funds?
+
+{Reactions}
+👍 
+
+[03/07/2023 22:39] 0xluckydev#5064
+The Wenwin team locks its tokens so we won't be able rug LPB participants and go away with funds. You can read brief description here: https://docs.wenwin.com/wenwin-lottery/protocol-architecture/token
+
+{Embed}
+https://docs.wenwin.com/wenwin-lottery/protocol-architecture/token
+Token
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/PqsPkO1MSAJYr40hpqNa-5929F.png
+
+
+[03/07/2023 22:59] Rvi#5470
+what would `drawCoolDownPeriod` and `firstDrawSchedule` be when deploying the contract ?
+
+
+[03/07/2023 23:01] Rvi#5470
+also `drawPeriod` is 7Days correct?
+
+
+[03/07/2023 23:49] 0xjuancito
+In the case you run multiple instances with different parameters, would that imply another `LotteryToken` as well?
+
+
+[03/07/2023 23:55] sovaslava9
+why test/ReferralSystemBase.sol is not ReferralSystemBase.t.sol? its abstract contract..and foundry dont catch it..
+
+
+[03/08/2023 00:31] 0xrobocop
+hi @rando  @Lucky Dev  what is expectedPayout?
+
+
+[03/08/2023 00:47] sovaslava9
+Could you describe please reconstructTicket() function? how it could return win ticket? (jackot)
+
+
+[03/08/2023 01:06] remaerd369
+Where are the storage of the draws going to? It says winning tickets will be claimable for 1 year correct?
+
+
+[03/08/2023 01:10] remaerd369
+With the reconstructTicket() that is with all unclaimed tickets correct for that previous draw? The referral claim allows you to claim if you have 35 referrals for that draw period minimum?
+
+
+[03/08/2023 07:10] y1cunhui
+What does "expectedPayout" means in the Lottery parameters
+
+
+[03/08/2023 07:10] y1cunhui
+Oh, the same question as mentioned above
+
+
+[03/08/2023 07:14] TutaRicky#4738
+`drawCoolDownPeriod` will probably be 30 minutes, `firstDrawSchedule` any time in the future, and `drawPeriod` will be 7 days. But this does not so matter, because, as @Lucky Dev wrote, we could deploy some other lottery, where all that parameters could be totally different.
+
+{Reactions}
+✅ 
+
+[03/08/2023 07:15] TutaRicky#4738
+Yes, for another `Lottery` deploy, it will be another `LotteryToken`
+
+{Reactions}
+👍 
+
+[03/08/2023 07:30] TutaRicky#4738
+Yeah, you are right, we changed something at the last moment in the contracts, and forgot to change this test.
+
+
+[03/08/2023 08:11] ahmet5611
+@TutaRicky DMed
+
+
+[03/08/2023 08:13] TutaRicky#4738
+`expectedPayout` is our fixed calculation about expected payout that depends on number of combinations for minimum rewards, `selectionSize`, `selectionMax` and of course, decimals for reward calculations. Formula is something like this (for 7/35, where first prize is for 3/7)
+```
+prizePerTier = {
+   3: $1.5,
+   4: $5,
+   5: $75,
+   6: $1500
+}
+expectedPayout = 0;
+for (x = 3; x < 7; x++) {
+    expectedPayout += prizePerTier[x] * (f(7,x) * f(35 - 7, 7-x) / f(35, 7))
+}
+```
+
+
+[03/08/2023 08:17] 0xluckydev#5064
+Yes you can claim up to 1 year from ticket's draw. After that, unclaimed jackpots are returned to the pot and non-jackpot ones are just lost. I'm sorry but I don't understand your second question
+
+{Reactions}
+👍 
+
+[03/08/2023 08:18] TutaRicky#4738
+I think that in code is pretty good explained - `Reconstructs ticket from random number. Each number is selected from appropriate 8 bits from random number. In each iteration, we calculate the modulo of a random number and then shift it for 8 bits to the right. The modulo is used to select one number from the numbers that are not already selected.`. So, `reconstructTicket` will return winning ticket combination.
+
+
+[03/08/2023 08:27] 0xluckydev#5064
+I suggest you running the function manually in isolation or trying to do it on paper with some smaller numbers too
+
+
+[03/08/2023 10:44] menox#8974
+just submitted a medium, let's hope it is relevant 🙂
+
+
+[03/08/2023 10:57] menox#8974
+One question. If I am not mistaken in the docs it says that one can buy multiple tickets per draw. But looking at the buyTickets functions we can see that only a ticket per draw can be bought
+
+
+[03/08/2023 10:59] TutaRicky#4738
+`But looking at the buyTickets functions we can see that only a ticket per draw can be bought` - not understand this, there is `drawIds` array, where you could put same `drawId` in a different indexes
+
+{Reactions}
+👍 
+
+[03/08/2023 11:01] igingu
+you could specify the same drawId multiple times: 
+drawIds: [1, 1, 2], tickets: [X, Y, Z] => tickets X and Y are bought for lottery 1, ticket Z is bought for lottery Z
+
+{Reactions}
+👍 
+
+[03/08/2023 11:32] 0xjuntao
+from my point of view, the code is very solid, finding bugs is not easy😂
+
+
+[03/08/2023 11:35] TutaRicky#4738
+This is, I suppose, more interesting than to easily find 5+ high issues 😂
+
+{Reactions}
+😅 
+
+[03/08/2023 11:42] menox#8974
+what is really interesting is trying to find a bug while understanding the codebase. The actual bug finding is a good by product (for the prize) 🙂
+
+
+[03/08/2023 11:42] menox#8974
+🙂
+
+
+[03/08/2023 11:51] igingu
+I agree, there are a lot of things the developers have meticulously thought about, I suspect a competitive programming background there in data structures and algorithms 🕵️‍♂️ Personally, I learned a lot, in terms of how to structure smart contracts especially
+
+
+[03/08/2023 12:31] dingo2077
+Guys, another question about unpacking 🙂
+So, if I play 4/10, choosed 0000001111 => uint(1,2,3,4).
+Than I requst draw and received from chainlink uint ( 5555555555 ). As i Understood no winnings here? It strange but tests gave me some winnings xD.
+Test gives winnings even at 0x00 random number. why?
+
+
+[03/08/2023 12:31] dingo2077
+Seems I misunderstood this scope
+
+
+[03/08/2023 12:34] dingo2077
+Also If i choosed 1,2,3,4 numbers, and rnd - 1122334455, no winning here
+
+
+[03/08/2023 12:34] 0xluckydev#5064
+You need to apply `TicketUtils.reconstructTicket` to the random `uint256` from Chainlink
+
+
+[03/08/2023 13:55] dontonka
+good morning, starting looking at this one XD, look solid and seems interesting. Does the `slither` output is part of the known issues 🤔 ?
+
+
+[03/08/2023 14:14] patrickalphac
+I have the same q
+
+
+[03/08/2023 14:28] remaerd369
+Sorry I’m horrible when thinking out loud. I kinda formed 3 questions in one. I’m trying to get a good overview of the process the ticket goes through after mint. Owner can transfer before/after ticket is claimed. Let’s say we have a ticket minted and it matches 6. Nobody claims. Ticket is valid 1 year for claim of that draw pool correct?
+
+
+[03/08/2023 14:32] 0xluckydev#5064
+If we assume draw period = 7 days (as it should be), you have 52 draws to claim the ticket no matter if it jackpot or not (but is winning ticket with amount > 0)
+
+{Reactions}
+👍 
+
+[03/08/2023 14:37] remaerd369
+What will the secondary transfer of the tokens be a more peer to peer swap or in a market like opensea?
+
+
+[03/08/2023 14:38] 0xluckydev#5064
+NFT tickets?
+
+
+[03/08/2023 14:40] patrickalphac
+Wouldn't it always make sense to set yourself as referer when you buy a ticket?
+
+{Reactions}
+👀 
+
+[03/08/2023 14:44] remaerd369
+Yes with the nft tickets.
+
+
+[03/08/2023 14:49] remaerd369
+Can I dm @Lucky Dev so I don’t clog up with my question
+
+
+[03/08/2023 14:50] chaduke3730
+Can I consider the stakingtoken as "LOT" in Staking.sol?
+
+
+[03/08/2023 14:50] menox#8974
+yes it is
+
+
+[03/08/2023 14:52] menox#8974
+the Staking contract is deployed from Lottery contract passing the native "LOT" token to it as the staking token
+
+
+[03/08/2023 14:52] chaduke3730
+@menoxThanks
+
+
+[03/08/2023 14:53] 0xluckydev#5064
+We haven't decided about ticket secondary marketplace, but my guess is that will be up to the users (Opensea or something similar most likely)
+
+{Reactions}
+💯 
+
+[03/08/2023 14:54] 0xluckydev#5064
+Sure
+
+
+[03/08/2023 14:54] remaerd369
+That’s what I figure too
+
+
+[03/08/2023 14:56] 0xluckydev#5064
+You are free to do so, but you must have min ticket sold to get any economic incentive. If you buy that many tickets, you deserve to get "cashback." Most of players will buy tickets through frontends, so we don't have any issues with self-referring
+
+{Reactions}
+👍 (2) 
+
+[03/08/2023 14:56] patrickalphac
+Why does `referralRegisterTickets` use the current draw? Wouldn't it make more sense to attach referrals to the drawId associated with each ticket? Perhaps this was just a gas saving measure? 
+
+`referralRegisterTickets(currentDraw, referrer, msg.sender, tickets.length);`
+
+{Reactions}
+👀 (2) 
+
+[03/08/2023 15:06] dontonka
+@Lucky Dev can we have an answer on this pls?
+
+
+[03/08/2023 15:09] 0xluckydev#5064
+Sorry, missed that one. Yes, we're aware of Slither output and can be considered as known issues
+
+{Reactions}
+👍 (2) 
+
+[03/08/2023 15:10] 0xluckydev#5064
+It's public to everyone, no need to report them
+
+
+[03/08/2023 15:13] rando#9476
+Very good question, thanks for asking. There are few reasons:
+1. We want referrer to be able to claim reward as soon as possible
+2. If user buys ticket for `currentDraw + 5`, we do not know minimal requirement for referrer to be able to claim as the calculation depends on `currentDraw + 4`. So, if user sells enough tickets for `currentDraw + 5` and he doesn't sell a single ticket after we get minimal requirement, total tickets that are eligable for rewards per draw will be wrong, and calculations broken. You can take a look at this line https://github.com/code-423n4/2023-03-wenwin/blob/main/src/ReferralSystem.sol#L64
+
+This is why we decided to give rewards for tickets sold during particular draw, and not the draw ticket was bought for.
+
+Hope this is helpful
+
+{Reactions}
+👍 (4) 
+
+[03/08/2023 15:16] patrickalphac
+ahhh yes I see that. Thank you!
+
+{Reactions}
+💯 
+
+[03/08/2023 15:17] rando#9476
+funny thing is that our initial implementation used actual drawId of the ticket, then we hit the wall when we run some tests 🙂
+
+{Reactions}
+code4rena (2) 🦾 
+
+[03/08/2023 15:25] m9800
+@rando dm you
+
+
+[03/08/2023 16:29] matin6517
+Are there any articles related to `reconstructTicket()` algorithm?
+Is there any reference for that function or it is dedicatedly designed by your team?
+
+
+[03/08/2023 16:31] vdrg
+Should we report things only taking into account DAI as reward token? Asking because the code seems to be built to support different tokens with different decimals and stuff, but some comments in the codebase imply that only "trusted" tokens will be used...
+
+{Reactions}
+👀 
+
+[03/08/2023 16:38] ksk2345
+@Lucky Dev, you mention that there can be multiple instances of the Lottery deployments with different parameters.
+Will there also be multiple Initial Token Sales for each of the LOT Token instances.
+
+{Reactions}
+👀 (2) 
+
+[03/08/2023 16:39] kiki_dev
+Hey @PatrickAlphaC  can we run all VRF Chainlink questions through you 😉
+
+{Reactions}
+👀 (2) 🪐 
+
+[03/08/2023 16:54] 0xluckydev#5064
+It is designed by the team, so nothing much besides function documentation
+
+
+[03/08/2023 17:02] santipu_
+Why the jackpots are returned to the pot but the non-jackpots are lost after 1 year? It makes more sense to also return the non-jackpots to the pot.
+
+
+[03/08/2023 17:04] patrickalphac
+ahah - no. I'll be heads down myself for the next 24 hours.
+
+{Reactions}
+🤝 
+
+[03/08/2023 17:04] 0xluckydev#5064
+Try not to think it will be DAI only. We will probably use DAI for the first product, but think more in general approach
+
+{Reactions}
+👌 (3) 
+
+[03/08/2023 17:05] patrickalphac
+But it's good to have your Chainlink knowledge on lock 🙂
+
+
+[03/08/2023 17:06] 0xpathfindr
+Issues with calculations make it hard to know what to return 
+I asked this question privately this was a response from the team. 
+
+
+```
+That's why expectedPayout exists, since we won't be able to calculate number of all non-jackpot winners throughout win tiers (in case of 7/35, from 3 to 6 matches), thus we won't know how much we need to return to the pot.
+Users have generous 52 draws to claim their winnings and we assume that all of them would do it (or at least, that's what expectedPayout covers on conservative average). If we wanted to introduce off-chain calculation of number of non-jackpot winners, it would introduce centralization in the protocol that is aiming for decentralized, uninterrupted and error prone lottery.
+Here's the explanation why
+After one year, that funds would be either implicitly locked (wasted) by users (they ever forget to claim) or by the protocol
+0xluckydev — Today at 09:31
+But, the tokens won't be really locked, as they would be used for paying upcoming prizes anyway which would even make the protocol less insolvent
+If you think of the protocol as one big pot, only portion of the pot is allocated for rewards, but any token from the pot can be used for payment, even ones that are "reserved" for rewards
+```
+
+{Reactions}
+👍 (2) 
+
+[03/08/2023 17:06] 0xpathfindr
+Check above ☝️
+
+
+[03/08/2023 17:06] 0xluckydev#5064
+I guess it is more like business decision, but if you have any open concerns about it, please write here of in DM
+
+
+[03/08/2023 17:07] 0xluckydev#5064
+One of the main issues is how to calculate all non-jackpot winners on-chain if you have like 1M tickets
+
+
+[03/08/2023 17:07] 0xluckydev#5064
+You have to check every single ticket
+
+
+[03/08/2023 17:15] dontonka
+sent a friend request.
+
+
+[03/08/2023 18:00] descharre
+Why do you do +1 here in the function referralDrawFinalize():  
+       
+minimumEligibleReferrals[drawFinalized + 1] =
+            getMinimumEligibleReferralsFactorCalculation(ticketsSoldDuringDraw);
+
+Is this to set the minimumReferalls for the next draw?
+
+
+[03/08/2023 19:09] L9 Baldur#8731
+Why wouldnt I set myself as a referrer every time I buy a ticket?
+
+
+[03/08/2023 19:15] milotruck
+^was answered here
+
+
+[03/08/2023 19:16] L9 Baldur#8731
+thanks
+
+
+[03/08/2023 20:25] kartoonjoy
+Pinned a message.
+
+
+[03/08/2023 20:27] dontonka
+can someone explain me how to calculate the 2nd and 3rd draw player rewards? I understand how to calculate for the first draw only 😭 .
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/image-71DF4.png
+
+
+[03/08/2023 21:30] 0xluckydev#5064
+Yes
+
+
+[03/08/2023 21:38] patrickalphac
+What is your `LOTTERY_EXPECTED_PAYOUT` environment variable going to be set to?  (380000000000000000?)
+
+I'm having a hard time grasping what `expectedPayout` should be.
+
+
+[03/08/2023 21:41] patrickalphac
+What does `380000000000000000` mean? It means for 1 ticket sold the expected payout is `0.38` DAI? I don't understand that.
+
+Is this supposed to be expected value of buying 1 ticket? 
+
+ie: If I buy 1 ticket @ 1.50 DAI, I should expect a 0.38 DAI return on investment?
+
+
+[03/08/2023 22:02] patrickalphac
+Also... How are you converting the 7 numbers to hex for the ticket?
+
+
+[03/08/2023 22:05] patrickalphac
+1, 2, 3, 4, 5,6,7 => ....?
+
+
+[03/08/2023 22:14] patrickalphac
+11111110000000000000000000000000000
+
+
+[03/08/2023 22:14] patrickalphac
+?
+
+
+[03/08/2023 22:16] matin6517
+I have the same question but for the user inputs as uint120.
+Because the winning ticket is computed and packed inside the function 'reconstructTicket()' 🤔
+
+
+[03/08/2023 22:17] 0xjuancito
+https://discord.com/channels/810916927919620096/1081179460239372359/1082598714171998228
+
+
+[03/08/2023 22:17] adriro
+@Lucky Dev @rando is `expectedPayout` a probabilistic measure of the payout **per ticket**?  what would be a reasonable value for your current setup?
+
+
+[03/08/2023 22:18] patrickalphac
+Thanks. I can't seem to be able to get it right tho... Perhaps I'm not converting it correct. 
+
+Running:
+`cast --to-base 00000000000000000000000000001111111 hex` to get the hex for the uint120
+
+
+[03/08/2023 22:19] 0xluckydev#5064
+I was about to write something similar, so yes
+
+
+[03/08/2023 22:19] 0xluckydev#5064
+We can't calculate non-jackpot winners on-chain, so expected payout is approximation for winners and we expect 0.38 DAI would be paid out of 1.5 DAI ticket
+
+{Reactions}
+👍 
+
+[03/08/2023 22:20] 0xluckydev#5064
+Just a hint: if you want to know what values we would use, check `.env.example`
+
+
+[03/08/2023 22:21] 0xluckydev#5064
+0x7F, rightmost 7 bits
+
+
+[03/08/2023 22:21] adriro
+sorry didn't see patrick asked the same 😅
+
+
+[03/08/2023 22:21] patrickalphac
+all g
+
+
+[03/08/2023 22:21] 0xluckydev#5064
+@PatrickAlphaC check this Python code
+
+
+[03/08/2023 22:22] 0xluckydev#5064
+Also, there's `TicketUtils.isValidTicket`, can be useful for understanding ticket encoding
+
+
+[03/08/2023 22:22] 0xjuancito
+https://discord.com/channels/810916927919620096/1081179460239372359/1082720300795437166
+
+`11111110000000000000000000000000000` would be 35,34,33,32,31,30,29
+
+Each position represents the actual number. There's no hex conversion
+
+
+[03/08/2023 22:22] patrickalphac
+Yeah that's what I was going off ahah
+
+
+[03/08/2023 22:22] 0xluckydev#5064
+Basically, it is a set represented as bit vector
+
+
+[03/08/2023 22:24] patrickalphac
+riiiighhttt. ok ok got it. I was trying to convert it to a hex.
+
+{Reactions}
+👌 🤝 
+
+[03/08/2023 22:24] adriro
+Here's a snippet in solidity I'm using in my tests
+```
+function getNumbersFromTicket(uint256 ticket, uint256 selectionSize, uint256 selectionMax) internal returns (uint256[] memory numbers) {
+        numbers = new uint256[](selectionSize);
+        uint256 currentNumber = 0;
+
+        for(uint256 i = 0; i < selectionMax; ++i) {
+            if (ticket & uint256(1) > 0) {
+               numbers[currentNumber] = i;
+               currentNumber++;
+            }
+            ticket >>= 1;
+        }
+    }
+```
+
+{Reactions}
+👍 (3) 
+
+[03/08/2023 22:24] patrickalphac
+So it's the dec interpretation of the binary. Or the literal hex of the binary.
+
+I was being dumb. Thanks
+
+
+[03/08/2023 22:26] 0xluckydev#5064
+I'm glad that's sorted out
+
+
+[03/08/2023 22:31] dontonka
+@Lucky Dev can you help ? also trying to understand those for the referral similation in test, could you help me understand how you came up with those numbers (700k, 500k and 300k) ?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/image-2B39A.png
+
+
+[03/08/2023 22:34] adriro
+@Lucky Dev can I dm?
+
+
+[03/08/2023 22:35] patrickalphac
+This took me a hot second to go through too. idk how they came up with them but they seem pretty solid.
+
+{Reactions}
+👍 (2) 
+
+[03/08/2023 22:46] dontonka
+i think i figure it out. 961538 - 9335 = 952203 - 9335 = 942867, etc..
+
+9335 being the decrement over 2 years of the original 5% of 1B (961538 / 103 == ~9335), 103 because not counting the first draw.
+
+
+[03/08/2023 22:49] dontonka
+the code in `playerRewardsPerDraw` also seems express this properly.
+
+
+[03/08/2023 23:21] 0xarnie
+@Lucky Dev can i dm
+
+
+[03/08/2023 23:29] 0xarnie
+important
+
+
+[03/09/2023 07:30] 0xluckydev#5064
+Yes, DM are open
+
+
+[03/09/2023 08:29] beirao
+What is the goal of drawCoolDownPeriod ? in LotterySetup
+
+
+[03/09/2023 08:35] 0xluckydev#5064
+A short period of time before a draw when you cannot buy tickets
+
+{Reactions}
+👍🏼 
+
+[03/09/2023 09:31] elku.cryptos
+is there a reason why its there? I mean anyway users cant buy for past draws.
+
+
+[03/09/2023 09:36] 0xpathfindr
+I think it is to ensure that you cannot buy a ticket while a draw is being executed
+
+
+[03/09/2023 09:46] rando#9476
+you cannot buy tickets for past draws
+
+
+[03/09/2023 09:47] rando#9476
+if deployer wants to allow buying tickets until the actual draw, he can set coolDownPeriod to some really small value
+
+
+[03/09/2023 09:47] rando#9476
+however, we will use ~5min for the 1 week draw period
+
+
+[03/09/2023 09:54] 0xluckydev#5064
+Look at it as a business decision for handling ticket buying
+
+
+[03/09/2023 09:54] elku.cryptos
+thx both.
+
+{Reactions}
+🤝 (2) 
+
+[03/09/2023 11:30] 0xpathfindr
+The `stakingRewardRecipient` is the creator the lottery correct?
+
+
+[03/09/2023 11:32] 0xpathfindr
+Or rather, the lottery itself ?
+
+
+[03/09/2023 11:49] 0xluckydev#5064
+No, check the code:
+```
+    constructor(
+        LotterySetupParams memory lotterySetupParams,
+        uint256 playerRewardFirstDraw,
+        uint256 playerRewardDecreasePerDraw,
+        uint256[] memory rewardsToReferrersPerDraw,
+        uint256 maxRNFailedAttempts,
+        uint256 maxRNRequestDelay
+    )
+        Ticket()
+        LotterySetup(lotterySetupParams)
+        ReferralSystem(playerRewardFirstDraw, playerRewardDecreasePerDraw, rewardsToReferrersPerDraw)
+        RNSourceController(maxRNFailedAttempts, maxRNRequestDelay)
+    {
+        stakingRewardRecipient = address(
+            new Staking(
+            this,
+            lotterySetupParams.token,
+            nativeToken,
+            "Staked LOT",
+            "stLOT"
+            )
+        );
+        ...
+```
+
+{Reactions}
+👍 
+
+[03/09/2023 11:49] 0xluckydev#5064
+Lottery creates a staking contract that will receive staking rewards
+
+
+[03/09/2023 14:26] menox#8974
+5h left. How many medium/high?
+
+
+[03/09/2023 14:26] menox#8974
+🙂
+
+
+[03/09/2023 14:31] beirao
+0 and you ?
+
+
+[03/09/2023 14:32] illilli000
+please do not discuss findings until after the report is released
+
+{Reactions}
+🫡 (14) 👆 (6) 
+
+[03/09/2023 15:53] 0xpathfindr
+Is the winning number is pulled from one draw?
+For exmaple, if its a 7/35 contest will there be 7 draws 1 number each draw? or 1 draw with all 7 numbers in that draw
+
+
+[03/09/2023 15:59] 0xluckydev#5064
+1 draw picks all 7 numbers
+
+
+[03/09/2023 19:11] alexxander
+Was a pleasure participating in this Contest 🙌 Codebase was well structured and nicely documented, props to the team !
+
+{Reactions}
+👆🏼 (6) 10_10 (2) 🔥 (3) 
+
+[03/09/2023 19:16] rando#9476
+thank you
+we also enjoyed answering all the questions from wardens
+can't wait to see findings
+
+{Reactions}
+🙏 (10) 👋 (3) 👀 (2) 
+
+[03/09/2023 20:00] 0xdaef0f
+I feel the same way. Goodspeed to the protocol and everyone who participated 🍀 ❤️
+
+
+[03/09/2023 20:01] chaindev
+Can we expect the result by this month?
+
+
+[03/09/2023 20:01] 0xarnie
+wow tried to submit my final issue in the last 5 min and could not. Learned my lesson today to not wait last minute as things like this could happen 😢
+
+
+[03/09/2023 20:01] time1337
+Thanks team, It was my first contest and lot of learning 😄
+
+
+[03/09/2023 20:02] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens The **Wenwin** contest is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a gardener if you have questions along the way!
+
+{Reactions}
+😓 (7) 💯 (8) 
+
+[03/09/2023 20:02] gogotheauditor
+Same here
+
+{Reactions}
+😢 (2) 
+
+[03/09/2023 20:02] 0xarnie
+can someone from team dm. I was not allowed to submit issue even with 5 minutes remaining
+
+
+[03/09/2023 20:04] madalad
+Ty everyone, super clean and interesting codebase, was hard to find bugs! GL all :hi5:
+
+{Reactions}
+👆 
+
+[03/09/2023 20:04] kaiziron
+its also not loading quite properly on the last 10 min for me, but luckily still managed to get my finding submitted
+
+
+[03/09/2023 20:05] 0xjuancito
+I was fortunate enough to be able to do it, but will have this in mind for the future
+
+
+[03/09/2023 20:05] 0xarnie
+😢
+
+
+[03/09/2023 20:05] 0xjuancito
+Oh no, I wasn't
+
+
+[03/09/2023 20:05] 0xjuancito
+> This contest has ended.
+> You can no longer submit findings for this contest.
+
+
+[03/09/2023 20:05] 0xjuancito
+Also, like 5 min before it ended
+
+
+[03/09/2023 20:05] kaiziron
+refreshed a few times and the page finally loaded
+
+
+[03/09/2023 20:07] 0xjuancito
+Any way to know if it was submitted?
+
+
+[03/09/2023 20:08] rando#9476
+I guess someone from C4 team can help you
+However, for future, submit issues earlier
+
+{Reactions}
+➕ (2) 
+
+[03/09/2023 20:08] adriro
+you should get an email confirming your submission
+
+
+[03/09/2023 20:10] 0xjuancito
+Yeah. The web failed, but I received the email 🙏. Thanks! I've learned my lesson
+
+{Reactions}
+🚀 
+
+[03/09/2023 20:11] 0xarnie
+yes i was just trying to make my submission perfect and ended up not being able to submite 5 min before 🤦‍♂️
+
+
+[03/09/2023 20:11] kaiziron
+you can submit it first, then update ur findings
+
+{Reactions}
+👍 
+
+[03/09/2023 20:11] adriro
+yeah so the web displays that message automatically after the timer ends
+
+{Reactions}
+👍 
+
+[03/09/2023 20:35] rando#9476
+Thanks everybody for participating, it was our pleasure
+
+{Reactions}
+💪 (18) 💯 (8) 🫡 (6) 🦾 🙏 (3) 
+
+[03/09/2023 20:43] 0xarnie
+Thank you, the code was really well written and I enjoyed looking through it
+
+
+[03/09/2023 20:46] igingu
+Thanks Wenwin team, it was great!
+
+
+[03/09/2023 20:47] kiki_dev
+This was a fun audit I learned a lot  wrapping my head around some of your implementations!
+
+
+[03/09/2023 20:51] zouvier
+I submitted a 3rd finding, but did not receive an email. Who can i reach out to check?
+
+
+[03/09/2023 21:22] 0xpathfindr
+Thanks everyone. Great project. Had fun auditing this one.
+
+
+[03/09/2023 22:21] chaduke3730
+Good luck to all
+
+{Reactions}
+10_10 (2) 
+
+[03/10/2023 09:50] sovaslava9
+Did anyone find high?
+
+
+[03/10/2023 10:07] beirao
+.
+
+
+[03/10/2023 12:41] menox#8974
+we will know it very soon hopefully 🙂
+
+
+[03/10/2023 13:10] beirao
+🥲
+
+
+[03/10/2023 15:51] beirao
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/Screenshot_from_2023-03-10_16-33-31-4BEAC.png
+
+{Reactions}
+🤣 (33) 
+
+[03/10/2023 19:39] igingu
+why is this the case? That we can't discuss them before report being released?
+
+
+[03/10/2023 19:58] 0xl3xx
+https://docs.code4rena.com/roles/wardens/submission-policy#audit-contest-guidelines
+-> Unless explicitly noted by the affiliated sponsor, wait until the contest report has been published before you disclose it publicly.
+
+{Embed}
+https://docs.code4rena.com/roles/wardens/submission-policy
+Submission policy
+
+{Reactions}
+👍 (4) 
+
+[03/13/2023 11:36] dingo2077
+I can't compile any project after wenwin. There is everythink ok only at winwin project. Other got this error, even if I install and init foundy from scratch. Did you have this error? How can I solve this?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/image-6B14C.png
+
+
+[03/13/2023 17:28] minh___
+I am looking at exactly the same issue right now
+
+
+[03/13/2023 17:29] dingo2077
+@rando @Lucky Dev could you help us? ty
+
+
+[03/13/2023 17:35] adriro
+looks like foundry issue, try running foundryup
+
+{Reactions}
+🔥 (2) 
+
+[03/19/2023 17:22] eren.eth
+try updating foundry (foundryup)
+
+
+[03/22/2023 13:11] itsmetechjay
+:code4rena: 💸 🎉 Awards for **Wenwin**:
+
+$8,080.04 USDC » @alexxander 
+$4,040.02 USDC » @Noam Yakov 
+$1,814.02 USDC » Cyfrin (@PatrickAlphaC, @giovannidisiena, @hansfriese)
+$1,307.28 USDC » @adriro 
+$1,252.17 USDC » @Haipls 
+$1,008.88 USDC » @ast3ros 
+$925.18 USDC » @anodaram 
+$789.13 USDC » Yukti_Chinta (@kenzo, @ElKu)
+$713.64 USDC » @d3e4 
+$641.04 USDC » @bin2chen 
+$641.04 USDC » @gogo 
+$619.34 USDC » @auditor0517 
+$619.34 USDC » @minhtrng 
+$530.13 USDC » @dingo2077 
+$407.79 USDC » @Blockian 
+$407.79 USDC » @savi0ur 
+$407.79 USDC » @0x73696d616f 
+$397.60 USDC » @MiloTruck 
+$327.55 USDC » nomoi (@0xV, @gnkz)
+$327.55 USDC » @Kaden 
+$318.44 USDC » @hl_ 
+$318.44 USDC » @peanuts 
+$275.63 USDC » @Rolezn 
+$251.21 USDC » @0xSmartContract 
+$193.23 USDC » @sashik_eth 
+$170.34 USDC » @horsefacts 
+$169.80 USDC » @Udsen 
+$169.80 USDC » @tnevler 
+$169.80 USDC » @zaskoh 
+$169.80 USDC » @lukris02 
+$148.64 USDC » @Dug 
+$148.64 USDC » @0xbepresent 
+$148.64 USDC » @madwookie 
+$103.11 USDC » @Madalad 
+$103.11 USDC » @descharre 
+$81.41 USDC » @volodya 
+$81.41 USDC » @Sathish9098 
+$81.41 USDC » @JCN 
+$81.41 USDC » matrix_0wl
+$81.41 USDC » @yongskiws 
+$81.41 USDC » @ReyAdmirado 
+$81.41 USDC » @rokso 
+$81.41 USDC » @Pheonix 
+$81.41 USDC » @hunter_w3b 
+$81.41 USDC » @atharvasama 
+$81.41 USDC » @c3phas
+$34.42 USDC » @igingu 
+$34.42 USDC » @0xnev 
+$34.42 USDC » @LethL 
+$34.42 USDC » @SAAJ 
+$34.42 USDC » @0x1f8b 
+$34.42 USDC » @slvDev 
+$21.70 USDC » @georgits 
+$21.70 USDC » @pipoca 
+$21.70 USDC » @SunSec 
+$21.70 USDC » @fatherOfBlocks 
+$21.70 USDC » @etherleif 
+$21.70 USDC » @bshramin  
+$21.70 USDC » @dontonka 
+$21.70 USDC » @whoismatthewmc1 
+$21.70 USDC » @glcanvas 
+$21.70 USDC » @0xSurena 
+$21.70 USDC » @EricTee 
+$21.70 USDC » @DadeKuma 
+$21.70 USDC » @cryptostellar5 
+$21.70 USDC » @Tedo 
+$21.70 USDC » @0xkazim 
+$21.70 USDC » UniversalCrypto (@amaechi eth, @tettehnetworks)
+$21.70 USDC » @imare 
+$21.70 USDC » @0xAgro 
+$21.70 USDC » @0xcatellatech 
+$21.70 USDC » @sakshamguruji 
+$21.70 USDC » @martin | Founder @ ShieldifySec 
+$21.70 USDC » @code-cipher 
+$21.70 USDC » @MohammedRizwan 
+$21.70 USDC » @nadin 
+$21.70 USDC » @btk 
+$21.70 USDC » @0xfuje 
+$21.70 USDC » @seeu 
+$21.70 USDC » @brgltd 
+$21.70 USDC » @juancito 
+$12.72 USDC » @0xhacksmithh 
+$12.72 USDC » @arialblack14 
+$12.72 USDC » @ch0bu 
+$12.72 USDC » @RaymondFam 
+$12.72 USDC » @saneryee 
+$12.72 USDC » @MiniGlome (Mlome) 
+$12.72 USDC » @Inspectah 
+$12.72 USDC » @air 
+$12.72 USDC » @ddimitrov22 
+$12.72 USDC » @schrodinger 
+$12.72 USDC » @0x6980 
+$12.72 USDC » @Rageur
+
+🏁 Findings summary
+---------------------------
+High risk findings: 8 total, 1 unique
+Med risk findings: 26 total, 7 unique
+Gas reports: 35
+QA reports: 54 
+
+Awards will be distributed on Polygon within the next week. Congratulations, everyone! 💸 💸 💸
+
+{Reactions}
+🔥 (16) ❤️ (2) 
+
+[03/22/2023 13:11] itsmetechjay
+*Note: If you participated in this contest and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+
+[03/22/2023 13:39] chaindev
+when can we expect the report?
+
+{Reactions}
+goose 
+
+[03/22/2023 13:51] sovaslava9
+If i dont see my name in list, after findings repo  become public, i can find my findings and notes, why them didnt were accepted ?
+
+
+[03/22/2023 14:04] 0xsorrynotsorry
+Yes correct. Once the repo is public, you can view all the submissions.
+
+
+[03/22/2023 15:15] Deleted User
+Hi, How can I view my submissions?
+
+
+[03/22/2023 15:15] itsmetechjay
+Once the report is published and the findings repo is public, you can view your submissions.
+
+{Reactions}
+🙇‍♂️ 
+
+[03/22/2023 15:16] igingu
+Will computation excel be public as well? To see how the winnings are calculated?
+
+
+[03/22/2023 16:54] dontonka
+yes 21$ lol. that was my 2nd contest, it will be very interesting to read what happened with my submissions and also what the top performers founds.
+
+
+[03/22/2023 19:26] sovaslava9
+I sent a lot of submissions.. but thee is not my nickname in list of winners.. very strange..
+
+
+[03/22/2023 19:26] sovaslava9
+is it possible escalate judge decision ?)
+
+
+[03/22/2023 21:35] fedotov_am
+I feel the same way 🙂
+
+
+[03/22/2023 21:36] fedotov_am
+I think I have sent gas and low reports
+
+
+[03/22/2023 21:40] fedotov_am
+I am not sure, where I can see the feedback on my reports.
+
+
+[03/22/2023 22:37] dontonka
+you should see all this when they publish the report, also why ur issues was downgraded or discarded, etc
+
+
+[03/23/2023 07:58] iceBear#4987
+Hello,
+
+I would like to ask if not removing the automatically generated results from the report would result in the submission being considered invalid?
+
+
+[03/29/2023 12:14] KAS#0354
+Hi, I submitted the findings and they also send me confirmation email but didn't get any response. sorry in advance This was my first submission so I want to know will they give anyone a response if there is rejection or acceptance.
+
+
+[04/12/2023 22:32] matin6517
+Hi,
+sorry to bother all, 
+Is it possible to ask dear judge about the issue 487?
+It was selected as a primary issue and then marked as unsatisfactory.
+I'd be appreciated if you could explain the reason behind it. 🙏🌹
+
+
+[04/12/2023 23:05] dadekuma
+Hi, I have a question about my issue @cccz : https://github.com/code-423n4/2023-03-wenwin-findings/issues/226
+
+Reorgs attacks are very possible on Polygon, and as the potential payout is very high they might be interested in doing so to improve their chance of winning.
+
+These issues are usually classified as medium (e.g RabbitHole contest: https://code4rena.com/reports/2023-01-rabbithole#m-01-questfactory-is-suspicious-of-the-reorg-attack) so I was wondering what was the reasoning behind the downgrade to low. Thank you!
+
+
+[04/13/2023 02:25] hellocccz
+This is because 487 is considered to be a duplicate of 478, and 478 is considered invalid for the reasons described in
+https://github.com/code-423n4/2023-03-wenwin-findings/issues/478#issuecomment-1465047514
+https://github.com/code-423n4/2023-03-wenwin-findings/issues/475#issuecomment-1464877286
+
+{Embed}
+https://github.com/code-423n4/2023-03-wenwin-findings/issues/475
+winning ticket odds are not distributed equally amongst users · Iss...
+Lines of code https://github.com/code-423n4/2023-03-wenwin/blob/main/src/TicketUtils.sol#L58-#L74 Vulnerability details Impact some users will be able to game the system and get optimal odds of win...
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/475-70E08
+
+{Embed}
+https://github.com/code-423n4/2023-03-wenwin-findings/issues/478
+If random number is too low, the lottery not completely random · Is...
+https://github.com/code-423n4/2023-03-wenwin/blob/91b89482aaedf8b8feb73c771d11c257eed997e8/src/TicketUtils.sol#L43-L76 Summary Random numbers below a certain limit will always return at least one r...
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/478-F5AD8
+
+
+[04/13/2023 02:41] hellocccz
+https://github.com/code-423n4/2023-03-wenwin-findings/issues/445#issuecomment-1467887896
+The sponsor states here that requestConfirmations are set properly and are immutable, and since the attack relies on the validator and random numbers cannot be predicted, I would consider it QA
+
+{Embed}
+https://github.com/code-423n4/2023-03-wenwin-findings/issues/445
+No security checks in VRF might lead to compromised results · Issue...
+Lines of code https://github.com/code-423n4/2023-03-wenwin/blob/91b89482aaedf8b8feb73c771d11c257eed997e8/src/VRFv2RNSource.sol#L32-L38 https://github.com/code-423n4/2023-03-wenwin/blob/91b89482aaed...
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/445-58B2A
+
+{Reactions}
+thankyou 
+
+[04/13/2023 04:11] 0xjuntao
+Hi I don't understand the M-01 (https://code4rena.com/reports/2023-03-wenwin#m-01-undermining-the-fairness-of-the-protocol-in-swapsource-and-possibilities-for-stealing-a-jackpot) issue raise by @alexxander ,  so retry() and swapSource() are each submitted in  seperate transaction, the precondition of suppressing one of the transactions is that their gas price should be different, but as the reponses are not know beforehand, how to decide which one to be submitted with more gas price?
+
+{Embed}
+https://code4rena.com/reports/2023-03-wenwin
+Wenwin contest
+The future of audits is decentralized.
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/c4-og-banner-0FCFA.png
+
+
+[04/13/2023 04:14] 0xjuntao
+yet I don't understand the M-02 (https://code4rena.com/reports/2023-03-wenwin#m-02-an-attacker-can-leave-the-protocol-in-a-drawing-state-for-extended-period-of-time) neither, how to frontrun with insufficient gas?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/2023-04-13_12.13.37-FADD4.png
+
+{Embed}
+https://code4rena.com/reports/2023-03-wenwin
+Wenwin contest
+The future of audits is decentralized.
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/c4-og-banner-0FCFA.png
+
+
+[04/13/2023 08:45] matin6517
+Thank you a lot 🙏
+
+{Reactions}
+❤️ 
+
+[04/13/2023 09:04] hellocccz
+Q1: The attacker can use MEV to make retry() be executed before swapSource()
+
+Q2: Check here https://github.com/code-423n4/2023-03-wenwin-findings/issues/521#issuecomment-1483809454
+
+{Embed}
+https://github.com/code-423n4/2023-03-wenwin-findings/issues/521
+Upgraded Q -> 2 from #345 [1678798666534] · Issue #521 · code-423n4...
+Judge has assessed an item in Issue #345 as 2 risk. The relevant finding follows: Issue #1 - An attacker can leave the protocol in a "drawing" state for extended period of time
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/521-5FCC1
+
+
+[04/13/2023 09:09] alexxander
+Some transactions submitted with insufficient gas are still considered successful because of the try{} catch{} block therefore you could manipulate the gasPrice
+
+{Reactions}
+👍 
+
+[04/13/2023 09:18] alexxander
+You would be suppressing the callbacks from Chainlink, but that’s an edge case if there is some deployment of a lottery with very short time between draws, the main issue is that retry() and swapSource() could be called at the same time which goes against chainlink security considerations of not re-requesting randomness
+
+
+[04/13/2023 09:40] 0xjuntao
+yes you are right that we are suprressing chainlink callbacks, my understanding of supressing is to raise the average gas price of transactions (by submitting useless transactions with high gas price), so transactions with lower gas price will be excluded
+
+
+[04/13/2023 09:41] 0xjuntao
+if my understanding is correct, the callback transactions should be with different gas price, so one of them could be excluded, even so,  there is still only 1/2 chance that attacker can supress the callback he doesn't prefer
+
+
+[04/13/2023 09:42] alexxander
+With regard to m2 - here you can see two calls to executeDraw() that both revert with out-of-gas, however one of them has enough gasLimit to finish execution of the catch{} clause and is a successful tx
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/trace-2-AC29C.png
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/trace-1-940D7.png
+
+
+[04/13/2023 09:42] 0xjuntao
+besides,  if it retry and swapSource being called twice  goes against chainlink security consideration, what's the impact on the protocol itself?
+
+
+[04/13/2023 09:45] alexxander
+The fairness is undermined since you are requesting 2 random numbers at the same time
+
+
+[04/13/2023 09:51] 0xjuntao
+hmm makes sense
+
+
+[04/13/2023 09:52] 0xjuntao
+thank you👍
+
+
+[04/13/2023 12:49] chaindev
+@cccz 
+Could you tell me the reason why this(https://github.com/code-423n4/2023-03-wenwin-findings/issues/16) has been rejected?
+
+
+[04/13/2023 13:17] hellocccz
+When judging GAS reports, I give each valid item 1 score, and good formatting and description ( like describing the amount of gas saved) are given extra scores. Then, grades of a, b, and c are assigned based on the total score.
+In wenwin's judgment, gas reports with less than 4 scores are assigned grade c.
+
+
+[04/13/2023 13:22] chaindev
+Ah, no worries
+I've already got reward $925 from this contest
+The reason is not for a reward
+I just thought that that submission is a creative idea and should be listed in the final report
+What a beautiful method in bit operation
+
+
+[04/13/2023 13:33] hellocccz
+Congratulations, and also, after reading the report again, I think it deserves extra scores, but I'm sorry I didn't review it in more detail during the judging
+
+
+[04/13/2023 13:36] chaindev
+No problem at all
+I just hope that point will be implemented while mitigation
+Thanks for your checking
+
+{Reactions}
+❤️ 
+
+[04/13/2023 21:53] sovaslava9
+What does grade-c mean?
+
+
+[04/14/2023 05:20] c3phas.
+Not satisfactory,the report was of low quality thus no reward
+
+
+[04/14/2023 13:26] dontonka
+captain, how do you produce those trace/callstack? is that in foundry?
+
+
+[04/14/2023 14:02] alexxander
+https://book.getfoundry.sh/forge/traces
+
+{Embed}
+https://book.getfoundry.sh/forge/traces
+Foundry Book
+A book on all things Foundry
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/card-24F4E.png
+
+{Reactions}
+👍 (2) 
+
+[04/15/2023 00:00] kiki_dev
+Ahh ya that one was mine. Still a little unsure how it was invalid but it was cool being the primary submission lol 😄
+
+
+[04/15/2023 04:45] hellocccz
+#478 says that when the random number is too low, the numbers will be all or partly 0.
+But in actuality, as stated in https://github.com/code-423n4/2023-03-wenwin-findings/issues/475#issuecomment-1464877286, numbers will be cycled within a range based on the random number, to make the lottery fair distribution.
+Consider selectionSize = 3 and selectionMax = 4
+when the random number is 0, the numbers is [0,0,0]
+when the random number is 24, the numbers is [0,0,0]
+When the random number is 24576, the numbers is still [0,0,0]
+
+{Embed}
+https://github.com/code-423n4/2023-03-wenwin-findings/issues/475
+winning ticket odds are not distributed equally amongst users · Iss...
+Lines of code https://github.com/code-423n4/2023-03-wenwin/blob/main/src/TicketUtils.sol#L58-#L74 Vulnerability details Impact some users will be able to game the system and get optimal odds of win...
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/475-70E08
+
+{Reactions}
+🫡 ❤️ 
+
+[04/15/2023 04:47] hellocccz
+numbers will cycle within the 24(4 * 3 * 2 * 1) possibilities
+
+
+[04/15/2023 05:23] kiki_dev
+My bad I meant 475 was mine. Thanks for the explanation! I need to get better at POC’s to flush out these false positives. Even looking back at my submission the math seems sound to me. But the sponsors explanation makes sense and with a better poc I would have came to the same conclusion. Bummed though, I was really looking forward to sharing this finding lol
+
+{Reactions}
+👍 (2) 
+
+[04/19/2023 09:56] igingu
+Can anyone help me understand why https://code4rena.com/reports/2023-03-wenwin/#m-04-possibility-to-steal-jackpot-bypassing-restrictions-in-the-executedraw is valid?
+My understanding is that the exploit assumes that an attacker executesDraw and then buys the winning ticket. The only way this would be possible is if the two would happen in the same block. However, executeDraw requests a random number from Chainlink VRF, which implies emitting an off-chain event after the block was confirmed, which implies the random number comes on-chain at a later block, a block where buyTickets would no longer work.
+
+The PoC showcased assumes that executeDraw and winningNumber coming back would happen in the same block, but how can that be possible, if ChainlinkVRF needs a block to be confirmed in order to pick the event from off-chain, generate a random number and then submit it? It seems like requesting and receiving random numbers are things that are impossible to happen in the same block
+
+@cccz @dingo2077 maybe I am missing something here? Thank you!
+
+{Embed}
+https://code4rena.com/reports/2023-03-wenwin/
+Wenwin contest
+The future of audits is decentralized.
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/c4-og-banner-0FCFA.png
+
+
+[04/19/2023 10:07] igingu
+Why was this submission marked as unsatisfactory? https://github.com/code-423n4/2023-03-wenwin-findings/issues/70
+Was it that the probability was not high enough for this to be a concern, or should I have created a more detailed report?
+
+{Embed}
+https://github.com/code-423n4/2023-03-wenwin-findings/issues/70
+Malicious onlyOwner and changing of Oracle can drain Lottery · Issu...
+Lines of code https://github.com/code-423n4/2023-03-wenwin/blob/main/src/RNSourceController.sol#L89 Vulnerability details [M-02] Malicious onlyOwner and changing of Oracle can drain Lottery If RNSo...
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/70-AE495
+
+
+[04/19/2023 12:10] igingu
+And congrats @adriro on your findings, very interesting stuff!
+
+{Reactions}
+❤️ 
+
+[04/19/2023 12:49] hellocccz
+Hi, this is an issue in the Automated findings https://gist.github.com/Picodes/70e749bf5bbebbd5cc745ba7bc3826b4#M-1
+
+{Embed}
+https://gist.github.com/Picodes/70e749bf5bbebbd5cc745ba7bc3826b4
+4naly3er-2023-03-wenwin.md
+GitHub Gist: instantly share code, notes, and snippets.
+Code4rena - ARCHIVE-Q1-2023 - wenwin-mar06 [1081179460239372359].txt_Files/gist-og-image-17482.png
+
+{Reactions}
+✅ 
+
+[04/20/2023 08:09] dingo2077
+Hi mate, good question. This is valid because:
+1) chainlink not hardcoded as one oracle.
+2) there is option (appropriate func) to change oracle, even for onchain.
+If there was possible to make this deal with chainlink it would be high.
+
+
+[04/20/2023 10:28] igingu
+I see, thanks @dingo2077 !
+
+
+==============================================================
+Exported 349 message(s)
+==============================================================
